@@ -1,0 +1,472 @@
+import feature ;
+feature.feature tchar    : 0 1 2 : propagated ;
+feature.feature debugstl : 0 1   : propagated ;
+
+
+## [2020-08-29] Windows stuff:
+## 
+##   This list been obtained by running the following command from /usr/i686-w64-mingw32/sys-root/mingw/lib:
+##     ls | gawk -- '{ if (match ($0, /^lib(.*)\.a$/, a)) printf ("lib %-40s : : <name>%-40s ;\n", a [1], a [1]); }' > ~/1
+
+lib aclui                                    : : <name>aclui                                    ;
+lib activeds                                 : : <name>activeds                                 ;
+lib adsldpc                                  : : <name>adsldpc                                  ;
+lib advapi32                                 : : <name>advapi32                                 ;
+lib apcups                                   : : <name>apcups                                   ;
+lib api-ms-win-core-winrt-l1-1-0             : : <name>api-ms-win-core-winrt-l1-1-0             ;
+lib api-ms-win-core-winrt-string-l1-1-0      : : <name>api-ms-win-core-winrt-string-l1-1-0      ;
+lib authz                                    : : <name>authz                                    ;
+lib avicap32                                 : : <name>avicap32                                 ;
+lib avifil32                                 : : <name>avifil32                                 ;
+lib avrt                                     : : <name>avrt                                     ;
+lib bcrypt                                   : : <name>bcrypt                                   ;
+lib bootvid                                  : : <name>bootvid                                  ;
+lib browcli                                  : : <name>browcli                                  ;
+lib bthprops                                 : : <name>bthprops                                 ;
+lib cabinet                                  : : <name>cabinet                                  ;
+lib cap                                      : : <name>cap                                      ;
+lib cfgmgr32                                 : : <name>cfgmgr32                                 ;
+lib classpnp                                 : : <name>classpnp                                 ;
+lib clfsw32                                  : : <name>clfsw32                                  ;
+lib clusapi                                  : : <name>clusapi                                  ;
+lib cmutil                                   : : <name>cmutil                                   ;
+lib comctl32                                 : : <name>comctl32                                 ;
+lib comdlg32                                 : : <name>comdlg32                                 ;
+lib connect                                  : : <name>connect                                  ;
+lib credui                                   : : <name>credui                                   ;
+lib crtdll                                   : : <name>crtdll                                   ;
+lib crypt32                                  : : <name>crypt32                                  ;
+lib cryptnet                                 : : <name>cryptnet                                 ;
+lib cryptsp                                  : : <name>cryptsp                                  ;
+lib cryptxml                                 : : <name>cryptxml                                 ;
+lib cscapi                                   : : <name>cscapi                                   ;
+lib ctl3d32                                  : : <name>ctl3d32                                  ;
+lib d2d1                                     : : <name>d2d1                                     ;
+lib d3d11                                    : : <name>d3d11                                    ;
+lib d3d8                                     : : <name>d3d8                                     ;
+lib d3d9                                     : : <name>d3d9                                     ;
+lib d3dcompiler                              : : <name>d3dcompiler                              ;
+lib d3dcompiler_33                           : : <name>d3dcompiler_33                           ;
+lib d3dcompiler_34                           : : <name>d3dcompiler_34                           ;
+lib d3dcompiler_35                           : : <name>d3dcompiler_35                           ;
+lib d3dcompiler_36                           : : <name>d3dcompiler_36                           ;
+lib d3dcompiler_37                           : : <name>d3dcompiler_37                           ;
+lib d3dcompiler_38                           : : <name>d3dcompiler_38                           ;
+lib d3dcompiler_39                           : : <name>d3dcompiler_39                           ;
+lib d3dcompiler_40                           : : <name>d3dcompiler_40                           ;
+lib d3dcompiler_41                           : : <name>d3dcompiler_41                           ;
+lib d3dcompiler_42                           : : <name>d3dcompiler_42                           ;
+lib d3dcompiler_43                           : : <name>d3dcompiler_43                           ;
+lib d3dcompiler_46                           : : <name>d3dcompiler_46                           ;
+lib d3dcompiler_47                           : : <name>d3dcompiler_47                           ;
+lib d3dcsx_46                                : : <name>d3dcsx_46                                ;
+lib d3dcsxd                                  : : <name>d3dcsxd                                  ;
+lib d3dcsxd_43                               : : <name>d3dcsxd_43                               ;
+lib d3dim                                    : : <name>d3dim                                    ;
+lib d3drm                                    : : <name>d3drm                                    ;
+lib d3dx10                                   : : <name>d3dx10                                   ;
+lib d3dx10_33                                : : <name>d3dx10_33                                ;
+lib d3dx10_34                                : : <name>d3dx10_34                                ;
+lib d3dx10_35                                : : <name>d3dx10_35                                ;
+lib d3dx10_36                                : : <name>d3dx10_36                                ;
+lib d3dx10_37                                : : <name>d3dx10_37                                ;
+lib d3dx10_38                                : : <name>d3dx10_38                                ;
+lib d3dx10_39                                : : <name>d3dx10_39                                ;
+lib d3dx10_40                                : : <name>d3dx10_40                                ;
+lib d3dx10_41                                : : <name>d3dx10_41                                ;
+lib d3dx10_42                                : : <name>d3dx10_42                                ;
+lib d3dx10_43                                : : <name>d3dx10_43                                ;
+lib d3dx11                                   : : <name>d3dx11                                   ;
+lib d3dx11_42                                : : <name>d3dx11_42                                ;
+lib d3dx11_43                                : : <name>d3dx11_43                                ;
+lib d3dx8d                                   : : <name>d3dx8d                                   ;
+lib d3dx9                                    : : <name>d3dx9                                    ;
+lib d3dx9_24                                 : : <name>d3dx9_24                                 ;
+lib d3dx9_25                                 : : <name>d3dx9_25                                 ;
+lib d3dx9_26                                 : : <name>d3dx9_26                                 ;
+lib d3dx9_27                                 : : <name>d3dx9_27                                 ;
+lib d3dx9_28                                 : : <name>d3dx9_28                                 ;
+lib d3dx9_29                                 : : <name>d3dx9_29                                 ;
+lib d3dx9_30                                 : : <name>d3dx9_30                                 ;
+lib d3dx9_31                                 : : <name>d3dx9_31                                 ;
+lib d3dx9_32                                 : : <name>d3dx9_32                                 ;
+lib d3dx9_33                                 : : <name>d3dx9_33                                 ;
+lib d3dx9_34                                 : : <name>d3dx9_34                                 ;
+lib d3dx9_35                                 : : <name>d3dx9_35                                 ;
+lib d3dx9_36                                 : : <name>d3dx9_36                                 ;
+lib d3dx9_37                                 : : <name>d3dx9_37                                 ;
+lib d3dx9_38                                 : : <name>d3dx9_38                                 ;
+lib d3dx9_39                                 : : <name>d3dx9_39                                 ;
+lib d3dx9_40                                 : : <name>d3dx9_40                                 ;
+lib d3dx9_41                                 : : <name>d3dx9_41                                 ;
+lib d3dx9_42                                 : : <name>d3dx9_42                                 ;
+lib d3dx9_43                                 : : <name>d3dx9_43                                 ;
+lib d3dx9d                                   : : <name>d3dx9d                                   ;
+lib d3dxof                                   : : <name>d3dxof                                   ;
+lib davclnt                                  : : <name>davclnt                                  ;
+lib davhlpr                                  : : <name>davhlpr                                  ;
+lib dbgeng                                   : : <name>dbgeng                                   ;
+lib dbghelp                                  : : <name>dbghelp                                  ;
+lib ddraw                                    : : <name>ddraw                                    ;
+lib delayimp                                 : : <name>delayimp                                 ;
+lib devmgr                                   : : <name>devmgr                                   ;
+lib devobj                                   : : <name>devobj                                   ;
+lib devrtl                                   : : <name>devrtl                                   ;
+lib dfscli                                   : : <name>dfscli                                   ;
+lib dhcpcsvc                                 : : <name>dhcpcsvc                                 ;
+lib dhcpcsvc6                                : : <name>dhcpcsvc6                                ;
+lib dhcpsapi                                 : : <name>dhcpsapi                                 ;
+lib dinput                                   : : <name>dinput                                   ;
+lib dinput8                                  : : <name>dinput8                                  ;
+lib dlcapi                                   : : <name>dlcapi                                   ;
+lib dmoguids                                 : : <name>dmoguids                                 ;
+lib dnsapi                                   : : <name>dnsapi                                   ;
+lib dplayx                                   : : <name>dplayx                                   ;
+lib dpnaddr                                  : : <name>dpnaddr                                  ;
+lib dpnet                                    : : <name>dpnet                                    ;
+lib dpnlobby                                 : : <name>dpnlobby                                 ;
+lib dpvoice                                  : : <name>dpvoice                                  ;
+lib dsetup                                   : : <name>dsetup                                   ;
+lib dsound                                   : : <name>dsound                                   ;
+lib dsrole                                   : : <name>dsrole                                   ;
+lib dssec                                    : : <name>dssec                                    ;
+lib dwmapi                                   : : <name>dwmapi                                   ;
+lib dwrite                                   : : <name>dwrite                                   ;
+lib dxapi                                    : : <name>dxapi                                    ;
+lib dxerr8                                   : : <name>dxerr8                                   ;
+lib dxerr9                                   : : <name>dxerr9                                   ;
+lib dxgi                                     : : <name>dxgi                                     ;
+lib dxguid                                   : : <name>dxguid                                   ;
+lib dxva2                                    : : <name>dxva2                                    ;
+lib eapp3hst                                 : : <name>eapp3hst                                 ;
+lib eappcfg                                  : : <name>eappcfg                                  ;
+lib eappgnui                                 : : <name>eappgnui                                 ;
+lib eapphost                                 : : <name>eapphost                                 ;
+lib eappprxy                                 : : <name>eappprxy                                 ;
+lib elscore                                  : : <name>elscore                                  ;
+lib esent                                    : : <name>esent                                    ;
+lib evr                                      : : <name>evr                                      ;
+lib faultrep                                 : : <name>faultrep                                 ;
+lib fwpuclnt                                 : : <name>fwpuclnt                                 ;
+lib gdbm                                     : : <name>gdbm                                     ;
+lib gdbm.dll                                 : : <name>gdbm.dll                                 ;
+lib gdbm_compat                              : : <name>gdbm_compat                              ;
+lib gdbm_compat.dll                          : : <name>gdbm_compat.dll                          ;
+lib gdi32                                    : : <name>gdi32                                    ;
+lib gdiplus                                  : : <name>gdiplus                                  ;
+lib glaux                                    : : <name>glaux                                    ;
+lib glu32                                    : : <name>glu32                                    ;
+lib glut                                     : : <name>glut                                     ;
+lib glut32                                   : : <name>glut32                                   ;
+lib gmon                                     : : <name>gmon                                     ;
+lib gpapi                                    : : <name>gpapi                                    ;
+lib gpedit                                   : : <name>gpedit                                   ;
+lib gpprefcl                                 : : <name>gpprefcl                                 ;
+lib gpscript                                 : : <name>gpscript                                 ;
+lib gptext                                   : : <name>gptext                                   ;
+lib hal                                      : : <name>hal                                      ;
+lib hid                                      : : <name>hid                                      ;
+lib hidclass                                 : : <name>hidclass                                 ;
+lib hidparse                                 : : <name>hidparse                                 ;
+lib httpapi                                  : : <name>httpapi                                  ;
+lib icmui                                    : : <name>icmui                                    ;
+lib igmpagnt                                 : : <name>igmpagnt                                 ;
+lib imagehlp                                 : : <name>imagehlp                                 ;
+lib imm32                                    : : <name>imm32                                    ;
+lib iphlpapi                                 : : <name>iphlpapi                                 ;
+lib iscsidsc                                 : : <name>iscsidsc                                 ;
+lib kernel32                                 : : <name>kernel32                                 ;
+lib ks                                       : : <name>ks                                       ;
+lib ksguid                                   : : <name>ksguid                                   ;
+lib ksproxy                                  : : <name>ksproxy                                  ;
+lib ksuser                                   : : <name>ksuser                                   ;
+lib ktmw32                                   : : <name>ktmw32                                   ;
+lib largeint                                 : : <name>largeint                                 ;
+lib locationapi                              : : <name>locationapi                              ;
+lib logoncli                                 : : <name>logoncli                                 ;
+lib lz32                                     : : <name>lz32                                     ;
+lib m                                        : : <name>m                                        ;
+lib mapi32                                   : : <name>mapi32                                   ;
+lib mcd                                      : : <name>mcd                                      ;
+lib mf                                       : : <name>mf                                       ;
+lib mfcuia32                                 : : <name>mfcuia32                                 ;
+lib mfplat                                   : : <name>mfplat                                   ;
+lib mfuuid                                   : : <name>mfuuid                                   ;
+lib mgmtapi                                  : : <name>mgmtapi                                  ;
+lib mingw32                                  : : <name>mingw32                                  ;
+lib mingwex                                  : : <name>mingwex                                  ;
+lib mingwthrd                                : : <name>mingwthrd                                ;
+lib moldname                                 : : <name>moldname                                 ;
+lib mpr                                      : : <name>mpr                                      ;
+lib mprapi                                   : : <name>mprapi                                   ;
+lib mqrt                                     : : <name>mqrt                                     ;
+lib msacm32                                  : : <name>msacm32                                  ;
+lib mscms                                    : : <name>mscms                                    ;
+lib msctf                                    : : <name>msctf                                    ;
+lib msctfmonitor                             : : <name>msctfmonitor                             ;
+lib msdmo                                    : : <name>msdmo                                    ;
+lib msdrm                                    : : <name>msdrm                                    ;
+lib mshtml                                   : : <name>mshtml                                   ;
+lib mshtmled                                 : : <name>mshtmled                                 ;
+lib msi                                      : : <name>msi                                      ;
+lib msimg32                                  : : <name>msimg32                                  ;
+lib mstask                                   : : <name>mstask                                   ;
+lib msvcp60                                  : : <name>msvcp60                                  ;
+lib msvcr100                                 : : <name>msvcr100                                 ;
+lib msvcr110                                 : : <name>msvcr110                                 ;
+lib msvcr80                                  : : <name>msvcr80                                  ;
+lib msvcr90                                  : : <name>msvcr90                                  ;
+lib msvcr90d                                 : : <name>msvcr90d                                 ;
+lib msvcrt                                   : : <name>msvcrt                                   ;
+lib msvcrt_0                                 : : <name>msvcrt_0                                 ;
+lib msvcrt_80                                : : <name>msvcrt_80                                ;
+lib msvfw32                                  : : <name>msvfw32                                  ;
+lib mswsock                                  : : <name>mswsock                                  ;
+lib ncrypt                                   : : <name>ncrypt                                   ;
+lib nddeapi                                  : : <name>nddeapi                                  ;
+lib ndfapi                                   : : <name>ndfapi                                   ;
+lib ndis                                     : : <name>ndis                                     ;
+lib netapi32                                 : : <name>netapi32                                 ;
+lib netjoin                                  : : <name>netjoin                                  ;
+lib netutils                                 : : <name>netutils                                 ;
+lib newdev                                   : : <name>newdev                                   ;
+lib normaliz                                 : : <name>normaliz                                 ;
+lib ntdll                                    : : <name>ntdll                                    ;
+lib ntdsapi                                  : : <name>ntdsapi                                  ;
+lib ntmsapi                                  : : <name>ntmsapi                                  ;
+lib ntoskrnl                                 : : <name>ntoskrnl                                 ;
+lib odbc32                                   : : <name>odbc32                                   ;
+lib odbccp32                                 : : <name>odbccp32                                 ;
+lib ole32                                    : : <name>ole32                                    ;
+lib oleacc                                   : : <name>oleacc                                   ;
+lib oleaut32                                 : : <name>oleaut32                                 ;
+lib olecli32                                 : : <name>olecli32                                 ;
+lib oledlg                                   : : <name>oledlg                                   ;
+lib olepro32                                 : : <name>olepro32                                 ;
+lib olesvr32                                 : : <name>olesvr32                                 ;
+lib olethk32                                 : : <name>olethk32                                 ;
+lib opengl32                                 : : <name>opengl32                                 ;
+lib p2p                                      : : <name>p2p                                      ;
+lib p2pcollab                                : : <name>p2pcollab                                ;
+lib p2pgraph                                 : : <name>p2pgraph                                 ;
+lib pcwum                                    : : <name>pcwum                                    ;
+lib pdh                                      : : <name>pdh                                      ;
+lib pdhui                                    : : <name>pdhui                                    ;
+lib penwin32                                 : : <name>penwin32                                 ;
+lib pkpd32                                   : : <name>pkpd32                                   ;
+lib portabledeviceguids                      : : <name>portabledeviceguids                      ;
+lib powrprof                                 : : <name>powrprof                                 ;
+lib psapi                                    : : <name>psapi                                    ;
+lib pthread                                  : : <name>pthread                                  ;
+lib pthread.dll                              : : <name>pthread.dll                              ;
+lib quartz                                   : : <name>quartz                                   ;
+lib qutil                                    : : <name>qutil                                    ;
+lib qwave                                    : : <name>qwave                                    ;
+lib rapi                                     : : <name>rapi                                     ;
+lib rasapi32                                 : : <name>rasapi32                                 ;
+lib rasdlg                                   : : <name>rasdlg                                   ;
+lib resutil                                  : : <name>resutil                                  ;
+lib rpcdce4                                  : : <name>rpcdce4                                  ;
+lib rpcdiag                                  : : <name>rpcdiag                                  ;
+lib rpchttp                                  : : <name>rpchttp                                  ;
+lib rpcns4                                   : : <name>rpcns4                                   ;
+lib rpcrt4                                   : : <name>rpcrt4                                   ;
+lib rstrmgr                                  : : <name>rstrmgr                                  ;
+lib rtm                                      : : <name>rtm                                      ;
+lib rtutils                                  : : <name>rtutils                                  ;
+lib runtimeobject                            : : <name>runtimeobject                            ;
+lib samcli                                   : : <name>samcli                                   ;
+lib schedcli                                 : : <name>schedcli                                 ;
+lib scrnsave                                 : : <name>scrnsave                                 ;
+lib scrnsavw                                 : : <name>scrnsavw                                 ;
+lib scsiport                                 : : <name>scsiport                                 ;
+lib secur32                                  : : <name>secur32                                  ;
+lib sensorsapi                               : : <name>sensorsapi                               ;
+lib setupapi                                 : : <name>setupapi                                 ;
+lib shell32                                  : : <name>shell32                                  ;
+lib shfolder                                 : : <name>shfolder                                 ;
+lib shlwapi                                  : : <name>shlwapi                                  ;
+lib slc                                      : : <name>slc                                      ;
+lib slcext                                   : : <name>slcext                                   ;
+lib slwga                                    : : <name>slwga                                    ;
+lib snmpapi                                  : : <name>snmpapi                                  ;
+lib spoolss                                  : : <name>spoolss                                  ;
+lib srvcli                                   : : <name>srvcli                                   ;
+lib sspicli                                  : : <name>sspicli                                  ;
+lib strmiids                                 : : <name>strmiids                                 ;
+lib svrapi                                   : : <name>svrapi                                   ;
+lib sxs                                      : : <name>sxs                                      ;
+lib t2embed                                  : : <name>t2embed                                  ;
+lib tapi32                                   : : <name>tapi32                                   ;
+lib tbs                                      : : <name>tbs                                      ;
+lib tdh                                      : : <name>tdh                                      ;
+lib tdi                                      : : <name>tdi                                      ;
+lib txfw32                                   : : <name>txfw32                                   ;
+lib url                                      : : <name>url                                      ;
+lib urlmon                                   : : <name>urlmon                                   ;
+lib usbcamd                                  : : <name>usbcamd                                  ;
+lib usbcamd2                                 : : <name>usbcamd2                                 ;
+lib usbd                                     : : <name>usbd                                     ;
+lib usbport                                  : : <name>usbport                                  ;
+lib user32                                   : : <name>user32                                   ;
+lib userenv                                  : : <name>userenv                                  ;
+lib usp10                                    : : <name>usp10                                    ;
+lib uuid                                     : : <name>uuid                                     ;
+lib uxtheme                                  : : <name>uxtheme                                  ;
+lib vdmdbg                                   : : <name>vdmdbg                                   ;
+lib version                                  : : <name>version                                  ;
+lib vfw32                                    : : <name>vfw32                                    ;
+lib videoprt                                 : : <name>videoprt                                 ;
+lib virtdisk                                 : : <name>virtdisk                                 ;
+lib vss_ps                                   : : <name>vss_ps                                   ;
+lib vssapi                                   : : <name>vssapi                                   ;
+lib vsstrace                                 : : <name>vsstrace                                 ;
+lib wbemuuid                                 : : <name>wbemuuid                                 ;
+lib wdsclient                                : : <name>wdsclient                                ;
+lib wdsclientapi                             : : <name>wdsclientapi                             ;
+lib wdscore                                  : : <name>wdscore                                  ;
+lib wdscsl                                   : : <name>wdscsl                                   ;
+lib wdsimage                                 : : <name>wdsimage                                 ;
+lib wdstptc                                  : : <name>wdstptc                                  ;
+lib wdsupgcompl                              : : <name>wdsupgcompl                              ;
+lib wdsutil                                  : : <name>wdsutil                                  ;
+lib wecapi                                   : : <name>wecapi                                   ;
+lib wer                                      : : <name>wer                                      ;
+lib wevtapi                                  : : <name>wevtapi                                  ;
+lib wevtfwd                                  : : <name>wevtfwd                                  ;
+lib wiadss                                   : : <name>wiadss                                   ;
+lib win32k                                   : : <name>win32k                                   ;
+lib win32spl                                 : : <name>win32spl                                 ;
+lib windowscodecs                            : : <name>windowscodecs                            ;
+lib winhttp                                  : : <name>winhttp                                  ;
+lib wininet                                  : : <name>wininet                                  ;
+lib winmm                                    : : <name>winmm                                    ;
+lib winpthread                               : : <name>winpthread                               ;
+lib winpthread.dll                           : : <name>winpthread.dll                           ;
+lib winscard                                 : : <name>winscard                                 ;
+lib winspool                                 : : <name>winspool                                 ;
+lib winstrm                                  : : <name>winstrm                                  ;
+lib wintrust                                 : : <name>wintrust                                 ;
+lib winusb                                   : : <name>winusb                                   ;
+lib wkscli                                   : : <name>wkscli                                   ;
+lib wlanapi                                  : : <name>wlanapi                                  ;
+lib wlanui                                   : : <name>wlanui                                   ;
+lib wlanutil                                 : : <name>wlanutil                                 ;
+lib wldap32                                  : : <name>wldap32                                  ;
+lib wmcodecdspuuid                           : : <name>wmcodecdspuuid                           ;
+lib wmilib                                   : : <name>wmilib                                   ;
+lib wow32                                    : : <name>wow32                                    ;
+lib ws2_32                                   : : <name>ws2_32                                   ;
+lib wsdapi                                   : : <name>wsdapi                                   ;
+lib wsnmp32                                  : : <name>wsnmp32                                  ;
+lib wsock32                                  : : <name>wsock32                                  ;
+lib wst                                      : : <name>wst                                      ;
+lib wtsapi32                                 : : <name>wtsapi32                                 ;
+lib x3daudio                                 : : <name>x3daudio                                 ;
+lib x3daudio1_2                              : : <name>x3daudio1_2                              ;
+lib x3daudio1_3                              : : <name>x3daudio1_3                              ;
+lib x3daudio1_4                              : : <name>x3daudio1_4                              ;
+lib x3daudio1_5                              : : <name>x3daudio1_5                              ;
+lib x3daudio1_6                              : : <name>x3daudio1_6                              ;
+lib x3daudio1_7                              : : <name>x3daudio1_7                              ;
+lib x3daudiod1_7                             : : <name>x3daudiod1_7                             ;
+lib xapofx                                   : : <name>xapofx                                   ;
+lib xapofx1_0                                : : <name>xapofx1_0                                ;
+lib xapofx1_1                                : : <name>xapofx1_1                                ;
+lib xapofx1_2                                : : <name>xapofx1_2                                ;
+lib xapofx1_3                                : : <name>xapofx1_3                                ;
+lib xapofx1_4                                : : <name>xapofx1_4                                ;
+lib xapofx1_5                                : : <name>xapofx1_5                                ;
+lib xapofxd1_5                               : : <name>xapofxd1_5                               ;
+lib xaudio2_8                                : : <name>xaudio2_8                                ;
+lib xinput                                   : : <name>xinput                                   ;
+lib xinput1_1                                : : <name>xinput1_1                                ;
+lib xinput1_2                                : : <name>xinput1_2                                ;
+lib xinput1_3                                : : <name>xinput1_3                                ;
+lib xinput1_4                                : : <name>xinput1_4                                ;
+lib xinput9_1_0                              : : <name>xinput9_1_0                              ;
+
+
+## [2020-08-29]
+
+module Adder
+{
+	Dev3_reqs =
+		<include>"Inc"
+		
+		<user-interface>gui:<define>"ADDER_TARGET_GUI=1"
+		<user-interface>gui,<toolset>gcc-win32:<linkflags>"-mwindows"
+		
+		#<optimization>none:<define>"ADDER_TARGET_OPTIMIZATION=0"
+		#<optimization>space:<define>"ADDER_TARGET_OPTIMIZATION=1"
+		#<optimization>speed:<define>"ADDER_TARGET_OPTIMIZATION=2"
+		
+		#<runtime-debugging>off:<define>"ADDER_TARGET_RUNTIME_DEBUGGING=0"
+		#<runtime-debugging>on:<define>"ADDER_TARGET_RUNTIME_DEBUGGING=1"
+		
+		<tchar>0:<define>"ADDER_TARGET_TCHAR=0"
+		<tchar>1:<define>"ADDER_TARGET_TCHAR=1"
+		<tchar>2:<define>"ADDER_TARGET_TCHAR=2"
+		<tchar>2:<define>"UNICODE"
+		<tchar>2:<define>"_UNICODE"
+		
+		
+		# For "debugstl", we inject #define's for various implementations of the STL:
+		
+			# But first, let us communicate the setting to our own code:
+			<debugstl>0:<define>"ADDER_TARGET_DEBUGSTL=0"
+			<debugstl>1:<define>"ADDER_TARGET_DEBUGSTL=1"
+		
+			# Rogue-Wave, Apache stdcxx:
+			<debugstl>1:<define>"_RWSTDDEBUG"
+			
+			# STLport:
+			<debugstl>1:<define>"_STLP_DEBUG"
+			
+			# Dinkumware, Visual C++:
+			# [2020-08-29] TODO: Support _ITERATOR_DEBUG_LEVEL (https://docs.microsoft.com/en-us/cpp/standard-library/iterator-debug-level?view=vs-2019).
+			<debugstl>1:<define>"_HAS_ITERATOR_DEBUGGING=1"
+			<debugstl>1:<define>"_SECURE_SCL=1"
+			
+			# GNU libstdc++:
+			<debugstl>1:<define>"_GLIBCXX_DEBUG"
+		;
+}
+
+project
+	Dev3
+	:
+	requirements
+		[ modules.peek Adder : Dev3_reqs ]
+	:
+	usage-requirements
+		[ modules.peek Adder : Dev3_reqs ]
+	:
+	build-dir
+		"_Bin"
+	;
+
+lib
+	Dev3
+	:
+	
+	# sources +
+		[ glob "Src/Adder/_Config/*.cpp" ]
+		[ glob "Src/Adder/*.cpp" ]
+		[ glob "Src/Adder/Windows/*.cpp" ]
+	:
+	
+	# requirements *
+		<link>static
+	:
+	
+	# default-build *
+		<threading>multi
+		<link>static
+		
+		<toolset>gcc-win32
+	:
+	
+	# usage-requirements *
+	;
+	
